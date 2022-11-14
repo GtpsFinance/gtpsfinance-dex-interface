@@ -27,8 +27,8 @@ import { SwapShowAcceptChanges, TruncatedText } from './styleds'
 const ArrowWrapper = styled.div<{ redesignFlag: boolean }>`
   padding: 4px;
   border-radius: 12px;
-  height: ${({ redesignFlag }) => (redesignFlag ? '40px' : '32px')};
-  width: ${({ redesignFlag }) => (redesignFlag ? '40px' : '32px')};
+  height: ${({ redesignFlag }) => (redesignFlag ? '100px' : '32px')};
+  width: ${({ redesignFlag }) => (redesignFlag ? '100px' : '32px')};
   position: relative;
   margin-top: -18px;
   margin-bottom: -18px;
