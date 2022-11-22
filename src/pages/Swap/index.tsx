@@ -703,7 +703,7 @@ export default function Swap() {
                             signatureState === UseERC20PermitState.SIGNED ? (
                               <Trans>You can now trade {currencies[Field.INPUT]?.symbol}</Trans>
                             ) : (
-                              <Trans>Allow the Uniswap Protocol to use your {currencies[Field.INPUT]?.symbol}</Trans>
+                              <Trans>Give GtpsFinance permission to use your {currencies[Field.INPUT]?.symbol}</Trans>
                             )}
                           </span>
                           {approvalPending || approvalState === ApprovalState.PENDING ? (
@@ -715,7 +715,7 @@ export default function Swap() {
                             <MouseoverTooltip
                               text={
                                 <Trans>
-                                  You must give the Uniswap smart contracts permission to use your{' '}
+                                  You must give the GtpsFinance smart contracts permission to use your{' '}
                                   {currencies[Field.INPUT]?.symbol}. You only have to do this once per token.
                                 </Trans>
                               }
